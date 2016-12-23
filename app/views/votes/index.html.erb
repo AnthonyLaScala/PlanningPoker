@@ -1,3 +1,4 @@
+<head><meta http-equiv="refresh" content="10" /></head>
 <p><center> <strong>Place Your Vote <strong></p>
 <div class='image-wrapper'>
 <% @votes.each do |vote_num| %>
@@ -30,6 +31,6 @@
 <div id='foobar' />
 <p>
 
-<%= button_to 'Clear Votes', votes_update_path %><p>
+<%= button_to 'Clear Votes', votes_update_path %><p><br>
 <%= button_to 'Clear Users', votes_reset_path %>
 </center>
