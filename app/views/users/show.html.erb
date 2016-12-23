@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p><center>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.vote %></td>
+
+
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td><p>
+  </tr>
+<% end %>
+
+<!-- <p>
+  <strong>Vote:</strong>
+  <%= @user.vote %>
+</p> -->
+
+<!-- <%= link_to 'Edit', edit_user_path(@user) %> | -->
+<%= link_to 'Next Vote', votes_path %></center>

@@ -1,0 +1,35 @@
+<p><center> <strong>Place Your Vote <strong></p>
+<div class='image-wrapper'>
+<% @votes.each do |vote_num| %>
+<!-- <%= link_to vote_num, cast_vote_path(vote_num), remote: true %> -->
+<!-- <%= vote_num %> -->
+<div class='image-post'>
+  <div class='image'>
+    <%=  link_to(image_tag("BlankPoker.png", size: "180x260"), cast_vote_path(vote_num), remote: true)%>
+  </div>
+  <div class='vote_num'><%= vote_num %></div>
+</div>
+<% end %>
+</div>
+<p>
+    <div class='vote-wrapper'>
+<% @users.each do |user| %>
+
+<div class='vote-user'>
+  <% if @all_has_voted %>
+    <%= user.vote %>
+    <% else %>
+<% image = user.vote ? 'Green.png' : 'Red.png' %>
+
+      <div class='image'><%=image_tag(image, size: "90x120")%></div>
+      <%end%>
+      <div class='name'><%= user.name %><br></div>
+</div>
+    <%end%>
+  </div>
+<div id='foobar' />
+<p>
+
+<%= button_to 'Clear Votes', votes_update_path %><p>
+<%= button_to 'Clear Users', votes_reset_path %>
+</center>
