@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.2.4"
 
 gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rubocop', '~> 0.46.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'ruby', '2.2.6'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'rails_12factor'
