@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rubocop', '~> 0.46.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'puma', '3.6.2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'rails_12factor'
