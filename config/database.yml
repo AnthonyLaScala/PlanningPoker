@@ -10,11 +10,11 @@ development:
   database: planning_poker_development
   # database: planning_poker_prod_backup
   # database: planning_poker_qa_backup
-  username: 
+  username:
   password:
 
 test:
   <<: *default
   database: planning_poker_test
   username: vagrant
-  password:
+  password: 
