@@ -13,8 +13,15 @@ development:
   username:
   password:
 
+production:
+  <<: *default
+  host: localhost
+  database: planning_poker_production
+  password:
+
+
 test:
   <<: *default
   database: planning_poker_test
   username: vagrant
-  password: 
+  password:
