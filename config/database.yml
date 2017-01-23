@@ -13,10 +13,16 @@ development:
   username:
   password:
 
+# production:
+#   <<: *default
+#   host: localhost
+#   database: planning_poker_production
+#   password:
 production:
   <<: *default
   host: localhost
-  database: planning_poker_production
+  database: planning_poker_production_test
+  username:
   password:
 
 
@@ -25,3 +31,7 @@ test:
   database: planning_poker_test
   username: vagrant
   password:
+
+
+# RAILS_ENV=production bundle exec rails server
+# rake db:setup; rake db:migrate

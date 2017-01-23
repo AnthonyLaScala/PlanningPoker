@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
 
-def initialize
-  super
-end
+# def initialize
+#   super
+# end
 
 end
 
